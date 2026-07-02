@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Adaire Baltzer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1d21;--ink-soft:#3f454d;--gray:#6b727c;--gray-light:#9aa1ab;
+    --line:#e8eaed;--panel:#fafbfc;--accent:#12294d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{
+    background:#eceef1;color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:16px;line-height:1.65;padding:48px 20px;
+  }
+  .page{
+    max-width:720px;margin:0 auto;background:#fff;border-radius:24px;
+    padding:76px 84px;box-shadow:0 1px 3px rgba(16,24,40,.04),0 12px 40px rgba(16,24,40,.06);
+  }
+  .top{display:flex;align-items:center;gap:30px;margin-bottom:44px}
+  .photo{
+    width:150px;height:150px;flex-shrink:0;border-radius:20px;object-fit:cover;object-position:50% 20%;
+    border:1px solid var(--line);box-shadow:0 8px 24px rgba(16,24,40,.12);background:#dfe4ea;
+  }
+  .eyebrow{
+    font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gray-light);margin-bottom:12px;
+  }
+  h1{
+    font-family:'Poppins',sans-serif;font-weight:800;font-size:38px;line-height:1.05;
+    letter-spacing:-.02em;color:var(--ink);margin-bottom:8px;
+  }
+  .role{font-size:16px;color:var(--accent);font-weight:600}
+  .bio p{color:var(--ink-soft);font-size:16.5px;line-height:1.7;margin-bottom:1.1em}
+  .bio p.lead{font-size:18px;color:var(--ink)}
+  .bio strong{color:var(--ink);font-weight:600}
+  .abouts{list-style:none;margin:6px 0 1.3em;padding:0}
+  .abouts li{
+    font-size:16px;line-height:1.6;color:var(--ink-soft);
+    padding-left:20px;position:relative;margin-bottom:13px;
+  }
+  .abouts li::before{
+    content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;
+    border-radius:50%;background:var(--accent);
+  }
+  .abouts em{font-style:italic;color:var(--ink)}
+  .cta{
+    margin-top:38px;padding-top:32px;border-top:1px solid var(--line);
+    display:flex;gap:28px;flex-wrap:wrap;align-items:center;
+  }
+  .cta .label{font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;color:var(--ink)}
+  .cta a{
+    font-size:15px;font-weight:500;color:var(--accent);text-decoration:none;
+    border-bottom:1px solid rgba(18,41,77,.28);padding-bottom:2px;
+  }
+  .cta a:hover{border-bottom-color:var(--accent)}
+  @media (max-width:600px){
+    .page{padding:44px 28px}
+    .top{flex-direction:column;text-align:center;gap:20px}
+    h1{font-size:32px}
+  }
+</style>
+</head>
+<body>
+  <section class="page">
+    <div class="top">
+      <img class="photo" src="adaire.jpg" alt="Adaire Baltzer">
+      <div>
+        <p class="eyebrow">About</p>
+        <h1>Adaire Baltzer</h1>
+        <p class="role">Workflow Designer &bull; Systems Thinker</p>
+      </div>
+    </div>
+
+    <div class="bio">
+      <p class="lead"><strong>The short version:</strong> eight years in special education, a growing inability to ignore a broken process, and a habit of building the tool instead of complaining about the problem.</p>
+      <p>The project pages cover the professional stuff. Here&rsquo;s what they leave out:</p>
+      <ul class="abouts">
+        <li>I have to understand <em>why</em> something&rsquo;s broken before I trust myself to fix it. Curiosity first, code second.</li>
+        <li>I build with AI, out loud. Knowing how to direct it well is a real skill &mdash; hiding it isn&rsquo;t honesty.</li>
+        <li>I judge my own work by one question: can the person it&rsquo;s built for actually run it without me in the room?</li>
+        <li>I&rsquo;m relocating to the Southeastern U.S., working remotely, and looking for a team that wants someone who spots what&rsquo;s broken and quietly fixes it.</li>
+      </ul>
+      <p>If that sounds like your kind of person, my inbox is open.</p>
+    </div>
+
+    <div class="cta">
+      <span class="label">Let&rsquo;s talk &mdash;</span>
+      <a href="mailto:adairebaltzer.work@gmail.com">adairebaltzer.work@gmail.com</a>
+      <a href="https://www.linkedin.com/in/adaire-baltzer" target="_blank" rel="noopener">LinkedIn &nearr;</a>
+    </div>
+  </section>
+</body>
+</html>
