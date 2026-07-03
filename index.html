@@ -8,13 +8,13 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
     --navy:#17345C;
     --text:#555F61;
-    --muted:#8A96A3;
+    --muted:#7A8895;
     --line:#E3E7EA;
 }
 
@@ -24,87 +24,85 @@
 
 body{
     margin:0;
-    font-family:Inter,Aptos,"Segoe UI",sans-serif;
-    background:#fff;
+    background:#ffffff;
     color:var(--text);
-    line-height:1.7;
+    font-family:Inter,Aptos,"Segoe UI",sans-serif;
+    font-size:18px;
+    line-height:1.6;
 }
 
 .container{
-    max-width:1000px;
-    margin:60px auto;
-    padding:0 40px;
+    max-width:980px;
+    margin:50px auto;
+    padding:0 36px;
 }
 
 .hero{
     display:grid;
     grid-template-columns:180px 1fr;
-    gap:34px;
+    gap:24px;
     align-items:center;
-    margin-bottom:50px;
+    margin-bottom:34px;
 }
 
 .hero img{
     width:180px;
-    border-radius:24px;
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    height:180px;
+    object-fit:cover;
+    border-radius:22px;
+    box-shadow:0 8px 24px rgba(0,0,0,.12);
 }
 
 .eyebrow{
-    color:#90A4C5;
-    text-transform:uppercase;
-    letter-spacing:.18em;
+    font-size:.85rem;
     font-weight:700;
-    font-size:.9rem;
-    margin-bottom:6px;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    color:#8EA2C5;
+    margin-bottom:4px;
 }
 
 h1{
     margin:0;
-    font-family:Poppins,sans-serif;
-    color:#111827;
-    font-size:3.3rem;
+    font-family:"Poppins",sans-serif;
+    font-size:3rem;
     line-height:1.05;
+    color:#17345C;
 }
 
 .subtitle{
-    margin-top:10px;
-    color:var(--navy);
-    font-size:1.45rem;
-    font-weight:600;
+    margin-top:6px;
+    font-size:1.3rem;
+    font-weight:500;
+    color:#5F6B76;
 }
 
 .content{
-    max-width:760px;
-    font-size:1.15rem;
+    max-width:720px;
 }
 
 .content p{
-    margin-bottom:1.5rem;
-}
-
-.content strong{
-    color:#111827;
+    margin:0 0 1.15rem;
 }
 
 blockquote{
-    margin:2.2rem 0;
-    padding-left:1.25rem;
-    border-left:4px solid var(--navy);
+    margin:1.6rem 0;
+    padding-left:1rem;
+    border-left:3px solid var(--navy);
     color:var(--navy);
-    font-size:1.55rem;
+    font-size:1.25rem;
     font-style:italic;
-    font-weight:700;
+    font-weight:600;
 }
 
 footer{
-    margin-top:60px;
-    padding-top:28px;
+    margin-top:48px;
+    padding-top:22px;
     border-top:1px solid var(--line);
     display:flex;
-    gap:40px;
+    gap:32px;
     flex-wrap:wrap;
-    font-size:1.05rem;
+    font-size:1rem;
 }
 
 footer a{
@@ -116,7 +114,11 @@ footer a:hover{
     text-decoration:underline;
 }
 
-@media(max-width:700px){
+@media (max-width:760px){
+
+.container{
+    padding:28px;
+}
 
 .hero{
     grid-template-columns:1fr;
@@ -145,12 +147,12 @@ footer a:hover{
 
 <div>
 
-<div class="eyebrow">About</div>
+<div class="eyebrow">ABOUT</div>
 
 <h1>Adaire Baltzer</h1>
 
 <div class="subtitle">
-Workflow Designer • Systems Thinker
+Workflow Designer • Systems Builder
 </div>
 
 </div>
@@ -159,13 +161,13 @@ Workflow Designer • Systems Thinker
 
 <div class="content">
 
-<p><strong>I get genuinely excited about solving problems with technology.</strong> I always have.</p>
+<p>I get genuinely excited about solving problems with technology. I always have.</p>
 
 <p>I'm happiest when I can use what I know to help someone else, especially if it gives them back time they didn't have before, offers a new perspective, or removes the friction that keeps them from doing their best work.</p>
 
 <p>When I was deciding what to study, I thought I had to choose between teaching and computers. I chose teaching because I wanted to help people. Looking back, I don't think I ever left technology behind. The moments that energized me most were always the ones where the two came together.</p>
 
-<p>I feel at home when I'm being productive on a computer. Whether I was building a spreadsheet, automating a repetitive task, organizing information, or teaching someone a new tool, I found myself asking the same question over and over:</p>
+<p>I feel at home when I'm being productive on a computer. Whether I was building a spreadsheet, automating a repetitive task, organizing information, or teaching someone a new tool, I found myself asking the same question over and over.</p>
 
 <blockquote>
 There has to be a better way.
@@ -173,7 +175,7 @@ There has to be a better way.
 
 <p>Over time, people started bringing me problems they didn't know how to solve. They'd joke that I was some kind of magician.</p>
 
-<p><strong>I'm not.</strong></p>
+<p>I'm not.</p>
 
 <p>I just don't like broken things. I feel compelled to understand them, fix them, and leave them better than I found them. I'm simply using my talents to be useful, and that makes me happy.</p>
 
@@ -185,13 +187,13 @@ There has to be a better way.
 
 <footer>
 
-<strong>Let's talk —</strong>
+<strong>Let's talk</strong>
 
 <a href="mailto:adairebaltzer.work@gmail.com">
 adairebaltzer.work@gmail.com
 </a>
 
-<a href="https://www.linkedin.com">
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN">
 LinkedIn ↗
 </a>
 
