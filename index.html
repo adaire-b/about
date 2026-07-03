@@ -1,107 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>About — Adaire Baltzer</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --ink:#1a1d21;--ink-soft:#3f454d;--gray:#6b727c;--gray-light:#9aa1ab;
-    --line:#e8eaed;--panel:#fafbfc;--accent:#12294d;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-  body{
-    background:#eceef1;color:var(--ink);
-    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-    font-size:16px;line-height:1.65;padding:48px 20px;
-  }
-  .page{
-    max-width:720px;margin:0 auto;background:#fff;border-radius:24px;
-    padding:76px 84px;box-shadow:0 1px 3px rgba(16,24,40,.04),0 12px 40px rgba(16,24,40,.06);
-  }
-  .top{display:flex;align-items:center;gap:30px;margin-bottom:44px}
-.photo{
-    width:180px;
-    height:180px;
-    flex-shrink:0;
-    border-radius:24px;
-    object-fit:cover;
-    object-position:50% 5%;
-    border:1px solid var(--line);
-    box-shadow:0 12px 30px rgba(16,24,40,.14);
-    background:#dfe4ea;
+:root{
+    --navy:#17345C;
+    --text:#555F61;
+    --muted:#8A96A3;
+    --line:#E3E7EA;
 }
-  .eyebrow{
-    font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
-    color:var(--gray-light);margin-bottom:12px;
-  }
-  h1{
-    font-family:'Poppins',sans-serif;font-weight:800;font-size:38px;line-height:1.05;
-    letter-spacing:-.02em;color:var(--ink);margin-bottom:8px;
-  }
-  .role{font-size:16px;color:var(--accent);font-weight:600}
-  .bio p{color:var(--ink-soft);font-size:16.5px;line-height:1.7;margin-bottom:1.1em}
-  .bio p.lead{font-size:18px;color:var(--ink)}
-  .bio strong{color:var(--ink);font-weight:600}
-  .abouts{list-style:none;margin:6px 0 1.3em;padding:0}
-  .abouts li{
-    font-size:16px;line-height:1.6;color:var(--ink-soft);
-    padding-left:20px;position:relative;margin-bottom:13px;
-  }
-  .abouts li::before{
-    content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;
-    border-radius:50%;background:var(--accent);
-  }
-  .abouts em{font-style:italic;color:var(--ink)}
-  .cta{
-    margin-top:38px;padding-top:32px;border-top:1px solid var(--line);
-    display:flex;gap:28px;flex-wrap:wrap;align-items:center;
-  }
-  .cta .label{font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;color:var(--ink)}
-  .cta a{
-    font-size:15px;font-weight:500;color:var(--accent);text-decoration:none;
-    border-bottom:1px solid rgba(18,41,77,.28);padding-bottom:2px;
-  }
-  .cta a:hover{border-bottom-color:var(--accent)}
-  @media (max-width:600px){
-    .page{padding:44px 28px}
-    .top{flex-direction:column;text-align:center;gap:20px}
-    h1{font-size:32px}
-  }
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Inter,Aptos,"Segoe UI",sans-serif;
+    background:#fff;
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    max-width:1000px;
+    margin:60px auto;
+    padding:0 40px;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:34px;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.hero img{
+    width:180px;
+    border-radius:24px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.eyebrow{
+    color:#90A4C5;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-weight:700;
+    font-size:.9rem;
+    margin-bottom:6px;
+}
+
+h1{
+    margin:0;
+    font-family:Poppins,sans-serif;
+    color:#111827;
+    font-size:3.3rem;
+    line-height:1.05;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:var(--navy);
+    font-size:1.45rem;
+    font-weight:600;
+}
+
+.content{
+    max-width:760px;
+    font-size:1.15rem;
+}
+
+.content p{
+    margin-bottom:1.5rem;
+}
+
+.content strong{
+    color:#111827;
+}
+
+blockquote{
+    margin:2.2rem 0;
+    padding-left:1.25rem;
+    border-left:4px solid var(--navy);
+    color:var(--navy);
+    font-size:1.55rem;
+    font-style:italic;
+    font-weight:700;
+}
+
+footer{
+    margin-top:60px;
+    padding-top:28px;
+    border-top:1px solid var(--line);
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    font-size:1.05rem;
+}
+
+footer a{
+    color:var(--navy);
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:700px){
+
+.hero{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.hero img{
+    margin:auto;
+}
+
+.content{
+    max-width:100%;
+}
+
+}
 </style>
 </head>
+
 <body>
-  <section class="page">
-    <div class="top">
-      <img class="photo" src="profile.png" alt="Portrait of Adaire Baltzer">
-      <div>
-        <p class="eyebrow">About</p>
-        <h1>Adaire Baltzer</h1>
-        <p class="role">Workflow Designer &bull; Systems Thinker</p>
-      </div>
-    </div>
 
-    <div class="bio">
-      <p class="lead"><strong>The short version:</strong> eight years in special education, a growing inability to ignore a broken process, and a habit of building the tool instead of complaining about the problem.</p>
-      <p>The project pages cover the professional stuff. Here&rsquo;s what they leave out:</p>
-      <ul class="abouts">
-        <li>I have to understand <em>why</em> something&rsquo;s broken before I trust myself to fix it. Curiosity first, code second.</li>
-        <li>I build with AI, out loud. Knowing how to direct it well is a real skill &mdash; hiding it isn&rsquo;t honesty.</li>
-        <li>I judge my own work by one question: can the person it&rsquo;s built for actually run it without me in the room?</li>
-        <li>I&rsquo;m relocating to the Southeastern U.S., working remotely, and looking for a team that wants someone who spots what&rsquo;s broken and quietly fixes it.</li>
-      </ul>
-      <p>If that sounds like your kind of person, my inbox is open.</p>
-    </div>
+<div class="container">
 
-    <div class="cta">
-      <span class="label">Let&rsquo;s talk &mdash;</span>
-      <a href="mailto:adairebaltzer.work@gmail.com">adairebaltzer.work@gmail.com</a>
-      <a href="https://www.linkedin.com/in/adaire-baltzer" target="_blank" rel="noopener">LinkedIn &nearr;</a>
-    </div>
-  </section>
+<div class="hero">
+
+<img src="images/profile.jpg" alt="Adaire Baltzer">
+
+<div>
+
+<div class="eyebrow">About</div>
+
+<h1>Adaire Baltzer</h1>
+
+<div class="subtitle">
+Workflow Designer • Systems Thinker
+</div>
+
+</div>
+
+</div>
+
+<div class="content">
+
+<p><strong>I get genuinely excited about solving problems with technology.</strong> I always have.</p>
+
+<p>I'm happiest when I can use what I know to help someone else, especially if it gives them back time they didn't have before, offers a new perspective, or removes the friction that keeps them from doing their best work.</p>
+
+<p>When I was deciding what to study, I thought I had to choose between teaching and computers. I chose teaching because I wanted to help people. Looking back, I don't think I ever left technology behind. The moments that energized me most were always the ones where the two came together.</p>
+
+<p>I feel at home when I'm being productive on a computer. Whether I was building a spreadsheet, automating a repetitive task, organizing information, or teaching someone a new tool, I found myself asking the same question over and over:</p>
+
+<blockquote>
+There has to be a better way.
+</blockquote>
+
+<p>Over time, people started bringing me problems they didn't know how to solve. They'd joke that I was some kind of magician.</p>
+
+<p><strong>I'm not.</strong></p>
+
+<p>I just don't like broken things. I feel compelled to understand them, fix them, and leave them better than I found them. I'm simply using my talents to be useful, and that makes me happy.</p>
+
+<p>The projects in this portfolio weren't created because I wanted to build software. They grew out of real frustrations, real conversations, and real people who deserved better tools. Education happened to be where I found those problems, but what has always excited me is understanding how people work and using technology to help them work better.</p>
+
+<p>For years, I thought I had chosen teaching over technology. Looking back, I don't think I ever had to choose. I've always been happiest where the two meet: solving real problems, building useful tools, and helping people do their best work.</p>
+
+</div>
+
+<footer>
+
+<strong>Let's talk —</strong>
+
+<a href="mailto:adairebaltzer.work@gmail.com">
+adairebaltzer.work@gmail.com
+</a>
+
+<a href="https://www.linkedin.com">
+LinkedIn ↗
+</a>
+
+</footer>
+
+</div>
+
 </body>
 </html>
