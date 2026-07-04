@@ -42,9 +42,9 @@ body{
 .hero{
     display:grid;
     grid-template-columns:180px 1fr;
-    gap:24px;
+    gap:20px;
     align-items:center;
-    margin-bottom:34px;
+    margin-bottom:26px;
 }
 
 .hero img{
@@ -60,7 +60,7 @@ body{
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:.16em;
-    color:#8EA2C5;
+    color:var(--accent);
     margin-bottom:4px;
 }
 
@@ -75,7 +75,7 @@ h1{
     margin-top:6px;
     font-size:1.3rem;
     font-weight:500;
-    color:#5F6B76;
+    color:var(--muted);
 }
 
 .content{
@@ -84,6 +84,14 @@ h1{
 
 .content p{
     margin:0 0 1.15rem;
+}
+    .content ul{
+    margin:.75rem 0 1.2rem;
+    padding-left:1.4rem;
+}
+
+.content li{
+    margin-bottom:.55rem;
 }
 
 blockquote{
@@ -107,7 +115,7 @@ footer{
 }
 
 footer a{
-    color:var(--navy);
+    color:var(--link);
     text-decoration:none;
 }
 
