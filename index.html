@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -97,8 +97,8 @@ h1{
 blockquote{
     margin:1.6rem 0;
     padding-left:1rem;
-    border-left:3px solid var(--navy);
-    color:var(--navy);
+    border-left:3px solid var(--link);
+    color:var(--link);
     font-size:1.25rem;
     font-style:italic;
     font-weight:600;
@@ -143,16 +143,38 @@ footer a:hover{
 }
 
 }
+
+.sitenav{max-width:860px;margin:0 auto;padding:26px 20px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px 20px;border-bottom:1px solid #E3E7EA;font-size:14px}
+.sitenav .brand{color:#7A8895;font-weight:600}
+.sitenav .links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.sitenav a{color:#17345C;text-decoration:none}
+.sitenav a:hover{text-decoration:underline}
+@media (max-width:600px){.sitenav{flex-direction:column;align-items:flex-start;gap:10px}}
 </style>
 </head>
 
 <body>
 
+<nav class="sitenav">
+  <span class="brand">Adaire Baltzer</span>
+  <span class="links">
+    <a href="https://adaire-b.carrd.co">Portfolio</a>
+    <a href="https://adaire-b.github.io/acadience-case-study/">Acadience</a>
+    <a href="https://adaire-b.github.io/mtss-case-study/">MTSS</a>
+    <a href="https://adaire-b.github.io/para-pd-hub/">Para Hub</a>
+    <a href="https://adaire-b.github.io/about/">About</a>
+    <a href="https://adaire-b.github.io/resume/">Résumé</a>
+    <a href="https://adaire-b.github.io/resume/Adaire_Baltzer_Resume.pdf">PDF</a>
+    <a href="https://www.linkedin.com/in/adaire-baltzer">LinkedIn</a>
+    <a href="https://github.com/adaire-b">GitHub</a>
+  </span>
+</nav>
+
 <div class="container">
 
 <div class="hero">
 
-<img src="profile.png" alt="Adaire Baltzer">
+<img src="images/profile.png" alt="Adaire Baltzer">
 
 <div>
 
@@ -172,21 +194,22 @@ Workflow Designer
 
 <p>I get genuinely excited about solving problems with technology. I always have.</p>
 
-<p>I'm happiest when I can use what I know to help someone else, especially if it gives them back time they didn't have before, offers a new perspective, or removes the friction that keeps them from doing their best work.</p>
+<p>What I love most is using what I know to help someone else, especially if it gives them back time they didn't have before, offers a new perspective, or removes the friction that keeps them from doing their best work.</p>
 
 <p><strong>The project pages show what I built. Here's what they don't show:</strong></p>
 
 <ul>
   <li>I don't like broken things. I feel compelled to understand them, fix them, and leave them better than I found them.</li>
-  <li>I'm happiest building at a computer&mdash;hours disappear when I'm untangling a problem or making a messy process just work.</li>
+  <li>I'm happiest building at a computer. Hours disappear when I'm untangling a problem or making a messy process just work.</li>
   <li>People sometimes think I'm some kind of magician. I'm not.</li>
-  <li>I build with AI, and I'm proud of that. It hasn't changed the way I think&mdash;it has changed what I'm capable of building.</li>
+  <li>I build with AI, and I'm proud of that. It hasn't changed the way I think. It has changed what I'm capable of building.</li>
   <li>I enjoy showing people what a tool can do. The best part is watching them stop worrying about how it works and start thinking about what it lets them accomplish. If it feels a little like magic, I've probably done my job.</li>
 </ul>
 
 <p>It usually starts with someone saying, "This process is driving us crazy." That's my favorite kind of conversation.</p>
 
 <p>I used to think I had chosen teaching over technology. Looking back, I think I've always been happiest where the two meet.</p>
+</div>
 
 <footer>
 
